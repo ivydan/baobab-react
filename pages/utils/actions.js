@@ -1,7 +1,7 @@
 "use strict";
 
 import _ from "lodash";
-// import commons from "./commons.js";
+import commons from "./commons.js";
 
 const actions = {
     //show store select
@@ -10,4 +10,4 @@ const actions = {
     // },
 }
 
-export default actions;
+export default commons.promisifyActions(actions);

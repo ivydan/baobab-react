@@ -5,19 +5,19 @@ import { branch } from "baobab-react/higher-order";
 
 import _ from "lodash";
 import actions from "../utils/actions";
-// import commons from "../utils/commons";
+import commons from "../utils/commons";
 import locale from "../utils/locale";
 import ajax from "../utils/ajax";
 class Page extends Component{
     constructor(props){
         super(props);
-        _.bindAll(this, "");
-        // commons.initComponent(this, { actions: actions });
+        // _.bindAll(this, "");
+        commons.initComponent(this, { actions: actions });
     }
 
     render(){
         return (
-            <div>index</div>
+            <div>index1111</div>
         )
     }
 }
