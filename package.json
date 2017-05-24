@@ -2,49 +2,34 @@
   "name": "baobab-react",
   "version": "1.0.0",
   "description": "baobab-react",
-  "main": "webpack.config.js",
   "dependencies": {
-		"webpack": "1.2.x",
-		"webpack-dev-server": "1.3.x",
-		"bootstrap": "https://github.com/twbs/bootstrap/archive/v3.0.2.tar.gz",
-		"jade-loader": "0.6.x",
-		"json-loader": "0.5.x",
-		"url-loader": "0.5.x",
-		"file-loader": "0.5.x",
-		"coffee-loader": "0.7.x",
-		"jshint-loader": "0.6.x",
-		"bundle-loader": "0.5.x",
-		"style-loader": "0.6.x",
-		"css-loader": "0.6.x",
-		"less-loader": "0.7.x",
-		"exports-loader": "0.6.x",
-		"raw-loader": "0.5.x"
+		"json-loader": "^0.5.4",
+		"style-loader": "~0.13.1",
+		"css-loader": "^0.26.1",
+		"raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.2",
+    "url-loader": "^0.5.7",
+    "file-loader": "^0.9.0",
+    "node-sass": "^3.10.1",
+    "path": "^0.12.7",
+    "html-webpack-plugin": "^2.24.1",
+    "open-browser-webpack-plugin": "0.0.3",
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "lodash": "^4.17.4",
+    "react-dom": "^15.4.0",
+    "react": "^15.4.0",
+    "baobab": "^2.3.3",
+    "baobab-react": "^2.1.2",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
 	},
-	"jam": {
-		"dependencies": {
-			"jquery": "1.9.1"
-		}
-	},
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://www.opensource.org/licenses/mit-license.php"
-		}
-	],
 	"scripts": {
-		"start": "webpack-dev-server -d --colors"
+		"start": "webpack-dev-server -d --colors",
+    "build": "webpack --config ./webpack.config.js --progress --profile --colors"
 	},
-	"engines": {
-		"node":  ">=0.1.30"
-	},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ivydan/baobab-react.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ivydan/baobab-react/issues"
-  },
-  "homepage": "https://github.com/ivydan/baobab-react#readme"
+  "license": "ISC"
 }
