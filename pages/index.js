@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 import { root } from "baobab-react/higher-order";
 import Page from "./view/page";
 import tree from "./utils/state_tree";
+import "./index.less";
 
 class App extends Component {
     render(){

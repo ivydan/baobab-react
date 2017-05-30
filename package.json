@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "baobab-react",
   "dependencies": {
-		"json-loader": "^0.5.4",
-		"style-loader": "~0.13.1",
-		"css-loader": "^0.26.1",
-		"raw-loader": "^0.5.1",
-    "sass-loader": "^4.0.2",
+    "json-loader": "^0.5.4",
+    "style-loader": "~0.13.1",
+    "css-loader": "^0.26.1",
+    "raw-loader": "^0.5.1",
+    "less-loader": "^4.0.3",
     "url-loader": "^0.5.7",
     "file-loader": "^0.9.0",
     "node-sass": "^3.10.1",
@@ -25,11 +25,15 @@
     "baobab-react": "^2.1.2",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
-	},
-	"scripts": {
-		"start": "webpack-dev-server -d --colors",
+  },
+  "scripts": {
+    "start": "webpack-dev-server -d --colors",
     "build": "webpack --config ./webpack.config.js --progress --profile --colors"
-	},
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^2.7.2",
+    "raf": "^3.3.2"
+  }
 }
